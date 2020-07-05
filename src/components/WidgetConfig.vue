@@ -278,13 +278,7 @@
       width="800px"
     >
       <div>
-        <div>
-          <Editor
-          :language="'javascript'"
-          :codes="editeConfig.javascriptCodes"
-          @onMounted="javascriptOnMounted"
-          @onCodeChange="javascriptOnCodeChange" />
-        </div>
+
       </div>
       <p style="text-align: center;margin-top:20px">
        <el-button type="primary" @click="handleCustomCodeSubmit">{{$t('tb.config.widget.submit')}}</el-button>
@@ -380,12 +374,12 @@ import {deepClone,createRandomStr, createRandomNum, createDateTime,amountnNumber
 
 import CusDialog from './CusDialog'
 
-import Editor from './Editor'
+// import Editor from './Editor'
 
 export default {
   components: {
     Draggable,
-    Editor,
+    // Editor,
     CusDialog
   },
   props: ['data'],
